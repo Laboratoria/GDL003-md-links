@@ -233,40 +233,6 @@ para usarlo programáticamente.
 - Puedes agregar más estadísticas.
 - Integración continua con Travis o Circle CI.
 
-## Evaluación
-
-### Tech
-
-| Habilidad              |
-| ---------------------- |
-| **JavaScript**         |
-| Estilo                 |
-| Nomenclatura/semántica |
-| Funciones/modularidad  |
-| Estructuras de datos   |
-| Tests                  |
-| **SCM**                |
-| Git                    |
-| GitHub                 |
-| **CS**                 |
-| Lógica                 |
-| Arquitectura           |
-
-### Habilidades Blandas
-
-| Habilidad                                                  |
-| ---------------------------------------------------------- |
-| Planificación y organización                               |
-| Autoaprendizaje                                            |
-| Solución de Problemas                                      |
-| Dar y recibir feedback                                     |
-| Adaptabilidad                                              |
-| Trabajo en equipo (trabajo colaborativo y responsabilidad) |
-| Comunicación eficaz                                        |
-| Presentaciones                                             |
-
-Recuerda revisar la rúbrica y de acuerdo a tus alcances en proyectos anteriores busca tu crecimiento personal.
-
 ## Pistas / Tips
 
 ### FAQs
