@@ -1,4 +1,22 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "## Preámbulo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulinaFranco/GDL003-md-links.git"
+  },
+  "author": "PaulinaFranco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulinaFranco/GDL003-md-links/issues"
+  },
+  "homepage": "https://github.com/PaulinaFranco/GDL003-md-links#readme"
 }
