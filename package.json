@@ -3,5 +3,29 @@
   "version": "0.1.0",
   "devDependencies": {
     "jest": "^24.8.0"
-  }
+  },
+  "description": "## Preámbulo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceci21062/GDL003-md-links.git"
+  },
+  "keywords": [
+    "links"
+  ],
+  "author": "karen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceci21062/GDL003-md-links/issues"
+  },
+  "homepage": "https://github.com/ceci21062/GDL003-md-links#readme"
 }
