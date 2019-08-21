@@ -1,8 +1,12 @@
-
 const mdLinks= require ('./index.js')
+
 // checking file extension
 let archive= process.argv;
-let file= archive[2]
-let funcMd = mdLinks.extencion(file)
-console.log(funcMd);
+let directory= process.cwd();
+//let file= archive[2]
+console.log(directory);
+
+//mdLinks.extencion(file)
+mdLinks.directoryContent(directory)
+
 
