@@ -1,5 +1,6 @@
 const path = require("path")
 const fs= require("fs")
+
 module.exports = {
     extencion: function (filePath) { 
         if (path.extname(filePath)=== ".md"){
@@ -15,14 +16,22 @@ module.exports = {
      fs.readdir( directory , 'utf8',((err, files)=>{
         if(err) throw err;
         console.log(files);
+
      }))
+    },
+
+    readingfile: function(file) {
+
+        fs.readFile(file, 'utf8',((err, text)=>{
+            if(err) throw err;
+            console.log(text);
+            }))    
     }
 
+
+
     
-    
-        
-    
-            }
+}
     
 /*module.exports = (filePath) => {
     path.extname(filePath) === ".md"     ;  

@@ -10,4 +10,6 @@ describe('mdLinks', () => {
   it('should return false for a valid .md file', () => {
     expect(mdLinks.extencion("../index.js")).toBe(false)
   });
+  
+  it()
 });
