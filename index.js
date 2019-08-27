@@ -2,26 +2,29 @@ const path = require("path")
 const fs= require("fs")
 
 module.exports = {
+
+    directoryContent: function(directory, callback){
+        fs.readdir( directory ,((err, files)=>{
+           if(err) {
+               throw err;
+            }
+           callback(files);
+           }))
+       },
+    
+
     extencion: function (filePath) { 
         if (path.extname(filePath)=== ".md"){
-            console.log(path.extname(filePath));
             return true;
         }
         else{
         return false;
         }
-        },
-
-    directoryContent: function(directory){
-     fs.readdir( directory , 'utf8',((err, files)=>{
-        if(err) throw err;
-        console.log(files);
-
-     }))
     },
 
-    readingfile: function(file) {
+    
 
+    readingfile: function(file) {
         fs.readFile(file, 'utf8',((err, text)=>{
             if(err) throw err;
             console.log(text);

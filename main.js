@@ -2,12 +2,20 @@ const mdLinks= require ('./index.js')
 const path= require("path")
 
 // checking file extension
-let archive= process.argv;
-console.log(archive);
-let file= archive[2];
 //mdLinks.extencion(file)
-let directory=path.dirname(file) ;
-//console.log(directory);
-mdLinks.directoryContent(directory)
+let directory=path.dirname(process.argv[2]) ;
+console.log(directory);
 //mdLinks.readingfile(file);
+
+mdLinks.directoryContent(directory, (file)=>{
+// console.log("El contenido de tu directorio es: "+ file);
+for(i=0; i<file.length; i++)
+ {
+    if((mdLinks.extencion(file[i]))){
+        console.log(file[i]);
+    }
+ }
+});
+
+
 
