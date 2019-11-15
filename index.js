@@ -23,12 +23,10 @@ module.exports = {
         else{
         return false;
         }
-    }
+    },
  
 
-    
-
-   /*  readingfile: function(file) {
+    readingfile: function(file) {
         fs.readFile(file, 'utf8',((err, text)=>{
             if(err) {
                 throw err;
@@ -39,23 +37,11 @@ module.exports = {
              console.log(urlArray.length);
              
             }))    
-    } */
+    } 
 }
 
     
-/*module.exports = (filePath) => {
-    path.extname(filePath) === ".md"     ;  
-        return path.extname(filePath) ;
-    
-};
-ternarios
-   path.extname(filePath)=== ".md") ? true : false
 
-module.exports = (filePath) => path.extname(filePath)=== ".md") ? true : false   o
-
-module.exports = filePath => path.extname(filePath) === ".md" ? true : false      o
-
-*/
 
 
 
