@@ -1,17 +1,20 @@
 const path = require("path")
 const fs= require("fs")
 
-module.exports = {
 
-    directoryContent: function(directory, callback){
-        fs.readdir( directory ,((err, files)=>{
-           if(err) {
-               throw err;
-            }
-           callback(files);
-           }))
-       },
-    
+ 
+module.exports = {
+    directoryContent:function (directory){
+        return new Promise ((resolve, reject)=>{
+                fs.readdir( directory ,((err, files)=>{
+                    if (err) {
+                        reject(err)
+                        return 
+                    }
+                resolve(files)
+            }))
+        })
+    },
 
     extencion: function (filePath) { 
         if (path.extname(filePath)=== ".md"){
@@ -20,11 +23,12 @@ module.exports = {
         else{
         return false;
         }
-    },
+    }
+ 
 
     
 
-    readingfile: function(file) {
+   /*  readingfile: function(file) {
         fs.readFile(file, 'utf8',((err, text)=>{
             if(err) {
                 throw err;
@@ -35,7 +39,7 @@ module.exports = {
              console.log(urlArray.length);
              
             }))    
-    }
+    } */
 }
 
     
