@@ -167,8 +167,7 @@ Por ejemplo:
 
 ```sh
 $ md-links ./some/example.md
-./some/example.md http://algo.com/2/3/ Link a algo
-./some/example.md https://otra-cosa.net/algun-doc.html algún doc
+
 ./some/example.md http://google.com/ Google
 ```
 
@@ -190,8 +189,6 @@ Por ejemplo:
 
 ```sh
 $ md-links ./some/example.md --validate
-./some/example.md http://algo.com/2/3/ ok 200 Link a algo
-./some/example.md https://otra-cosa.net/algun-doc.html fail 404 algún doc
 ./some/example.md http://google.com/ ok 301 Google
 ```
 
@@ -303,6 +300,7 @@ si tienes dudas existenciales con respecto a estas decisiones. No existe una
 - [Leer un directorio](https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback)
 - [Path](https://nodejs.org/api/path.html)
 - [Linea de comando CLI](https://medium.com/netscape/a-guide-to-create-a-nodejs-command-line-package-c2166ad0452e)
+- [EXAMPLE LINK FILE](https://github.com/0KarenGarcia/friendlychat-web)
 
 ## Checklist
 

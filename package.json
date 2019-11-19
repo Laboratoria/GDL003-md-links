@@ -10,7 +10,8 @@
     "test": "test"
   },
   "dependencies": {
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0"
   },
   "scripts": {
     "test": "jest --coverage"
