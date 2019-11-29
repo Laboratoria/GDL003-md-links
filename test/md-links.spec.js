@@ -15,5 +15,8 @@ describe('mdLinks', () => {
     mdLinks.directoryContent("/home/laboratoria-172/Documentos/Laboratoria/GDL003-md-links/k"), (File)=>{
       expect(File).toBe('README.md')
     }
-  })
+  });
+  it('should return content for a links', ()=>{
+    mdLinks.directoryContent("README.md"), (File)=>{
+      expect(urlArray).toBe('')
 });

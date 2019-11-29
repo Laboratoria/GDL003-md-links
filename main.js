@@ -2,8 +2,8 @@ const mdLinks= require ('./index.js')
 const path= require("path")
 
 //read directory 
-let directory=path.dirname(process.argv[1]);
-
+let directory=path.dirname(process.argv[2]+ "\\x");
+console.log(process.argv[2]);
 mdLinks.directoryContent(directory)
     .then((files)=>{
         for (i=0; i<files.length; i++){
@@ -14,7 +14,6 @@ mdLinks.directoryContent(directory)
                 mdLinks.readingfile(files[i])
                 .then((urlArray)=>{
                     console.log("total de links: " + " " + urlArray.length );
-                    //mdLinks.checkStatusLink(urlArray)
                     mdLinks.checkStatusLink(urlArray)
                     .then((propitiesLink)=>{
                         console.log(propitiesLink);
@@ -27,12 +26,5 @@ mdLinks.directoryContent(directory)
     .catch(function (error) {
          console.log(error.message);
     });
-
-
-
-
-
-
-
 //
 
